@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>aarons portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Object Oriented Systems</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="uml_diagram.html">Uml Diagram</a></li>
+                            <li class="active"><a href="object_system.html">Object system</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>UML Diagram<br />
+									supermarket Design</h1>
+									<p>To learn the basic skills related to designing an object oriented system we needed to learn about the different diagrams
+                                        used in a profession enviorment. One of these was a uml diagram in which we needed to look at a shopping system for a supermarket.
+                                        please find the diagram below.
+                                    </p>
+								</header>
+								<div class="image main"><img src="images/Figure1 Self-checkout class diagram.jpg" alt="" /></div>
+								<p>System Design: <br> 
+                                    
+                                    Self Service Checkout
+                                    When developing a system, a key part of the process is the designing of the system, although the majority of the systems concepts are produced within the conceptual phase the exact way the system will operate is determined within the design phase which makes it essential for the system to function efficiently. (Dennis A, 2015)
+                                    The classes implemented in this system design were:
+                                     
+                                    •	department
+                                    •	supermarket staff
+                                    •	warehouse staff 
+                                    •	stock
+                                    •	product
+                                    •	 basket
+                                    •	customer
+                                    •	checkout
+                                    •	loyalty card
+                                    •	payment complete 
+                                     
+                                    The classes listed were chosen considering the initial scenario given, in which all nouns associated to the systems function were drawn from the text and expanded on with the approach of the classes purpose. Several verbs in the scenario that related to the classes settled on were then utilized as behaviours for each corresponding class and attributes assigned where required for the function of the behaviours. Classes are facilitated by the use of real-world ideas and can operate through different concepts therefore in different applications. (Oestereich, B., 2002) 
+                                    Its through this notion that we can determine what classes are required in the self-checkout scenario, in reality we require a basket, a customer a product and a staff member etc.
+                                    
+                                    
+                                    Class relationships within system design
+                                    Composition and aggregation are both relationship types used within the self-checkout system design to connect the different classes in use. One such class that uses them is the department class. The department class is a requirement for the supermarket staff and warehouse staff subclasses, this has resulted in a composition style relationship in which the parent class is essential to the existence of the subclasses. Should the parent class, department, be destroyed the children class, supermarket staff and warehouse staff would also be destroyed. Further implementation of the aggregation relationship is used between customer and loyalty card. If loyalty card was to be destroyed or removed the customer would still exist, this is because a loyalty card is not essential to the workings of the customer and the systems intended use of providing a checkout solution to the customer. This can be seen in the class diagram (figure 1, 2022) using a line and an unfilled diamond between the class customer and the class loyalty card. 
+                                    Attributes within classes
+                                    The required attributes were determined by the behaviours or functions essential to the system, such as adding or removing products from the basket. For this to work the class, basket, would need to know the product id and cost which would later be used by checkout to calculate the cost and to process the payment.  Attributes such as product cost uses floats due to needing decimals and customer name has the type string, this is repeated throughout the class diagram to convey what is required for what attribute within a class. Messages are passed between classes requesting certain behaviours or functions to be used to further the customers requests until the shopping experience is complete. 
+                                    </p>
+								<p>References<br> 
+                                    
+                                    Burton, P.J. and Bruhn, R.E., 2004. Using UML to facilitate the teaching of object-oriented systems analysis and design. Journal of Computing Sciences in Colleges, 19(3), pp.278-290.
+                                    Dennis, A., Wixom, B. and Tegarden, D., 2015. Systems analysis and design: An object-oriented approach with UML. John wiley & sons.
+                                    Oestereich, B., 2002. Developing software with UML: Object-oriented analysis and design in practice. Pearson Education.
+                                    
+                                    </p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
